@@ -28,14 +28,12 @@ public class Contador {
 
     static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
         // validar se parametroUm é MAIOR que parametroDois e lançar a exceção
-
         if (parametroUm > parametroDois) {
             throw new ParametrosInvalidosException();
-        } else {
-        }
+        } else {}
+
 
         // realizar o for para imprimir os números com base na variável contagem
-
         for (int contagem = parametroDois - parametroUm; contagem < parametroDois; contagem++) {
             System.out.println("O Número é " + contagem);
         }
