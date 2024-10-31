@@ -3,22 +3,24 @@ import java.util.concurrent.ThreadLocalRandom;
 public class ProcessoSeletivo {
 
     public static void main(String[] args) {
+        selecaoCandidatos();
     }
 
-
-    static void imprimirSelecionados(){
-        String [] candidatos = {"João", "Pedro", "Augusto", "Dener", "Juninho"};
+    static void imprimirSelecionados() {
+        String[] candidatos = { "João", "Pedro", "Augusto", "Dener", "Juninho" };
         System.out.println("Imprimindo a lista de candidatos");
 
-        for (int indice = 0; indice < candidatos.length; indice++);    }
+        for (int indice = 0; indice < candidatos.length; indice++)
+            ;
+    }
 
-    static void selecaoCandidatos(){
-        String[] candidatos = {"João", "Pedro", "Augusto", "Dener", "Juninho", "Rodrigo", "Vinicius"};
-        
+    static void selecaoCandidatos() {
+        String[] candidatos = { "João", "Pedro", "Augusto", "Dener", "Juninho", "Rodrigo", "Vinicius" };
+
         int candidatosSelecionados = 0;
         int candidatoAtual = 0;
-        double salarioBase = 2000.0;
-        
+        double salarioBase = 30000.0;
+
         while (candidatosSelecionados < 5) {
             String candidato = candidatos[candidatoAtual];
             double pretencaoSalarial = pretencaoSalarial();
@@ -26,11 +28,11 @@ public class ProcessoSeletivo {
             System.out.println("O candidato " + candidato + "solicitou este valor de salario" + pretencaoSalarial);
             if (salarioBase >= pretencaoSalarial) {
                 System.out.println("o candidato " + candidato + "foi selecionado");
-                candidatosSelecionados ++;
+                candidatosSelecionados++;
             }
-            candidatoAtual ++;
+            candidatoAtual++;
         }
-    
+
     }
 
     static double pretencaoSalarial() {
