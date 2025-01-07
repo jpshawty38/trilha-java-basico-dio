@@ -3,7 +3,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class ProcessoSeletivo {
 
     public static void main(String[] args) {
-        selecaoCandidatos();
+        imprimirSelecionados();
     }
 
     static void imprimirSelecionados() {
